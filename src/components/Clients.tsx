@@ -3,6 +3,7 @@ export function Clients() {
     { label: 'Projects Completed', value: '180+' },
     { label: 'Happy Clients', value: '65+' },
     { label: 'Industries Served', value: '4' },
+<<<<<<< HEAD
     { label: 'Years of Experience', value: '3' }
   ]
 
@@ -83,6 +84,26 @@ export function Clients() {
         }
       `}</style>
 
+=======
+    { label: 'Years of Experience', value: '2' }
+  ]
+
+  const clients = [
+    'Ecell Scs&it',
+    'Civil Defence Indore',
+    'Shree Kedar Steels',
+    'ACPL',
+    'REVIVE',
+    'REVOLGO',
+    'VVD',
+    'Curezy',
+    'Geojuristoday',
+    'Vision'
+  ]
+
+  return (
+    <section id="clients" className="relative py-20 bg-background overflow-hidden">
+>>>>>>> 41aa7448b710a6f83e8472e539e659acc74fa569
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute inset-0 opacity-[0.05]"
@@ -114,8 +135,12 @@ export function Clients() {
           </p>
         </div>
 
+<<<<<<< HEAD
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-20">
+=======
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto mb-10">
+>>>>>>> 41aa7448b710a6f83e8472e539e659acc74fa569
           {counters.map((counter) => (
             <div key={counter.label} className="bg-card clean-border glass-surface rounded-2xl p-6 text-center subtle-shadow">
               <div className="text-3xl sm:text-4xl font-black text-foreground mb-2">
@@ -128,6 +153,7 @@ export function Clients() {
           ))}
         </div>
 
+<<<<<<< HEAD
         {/* Logo Scroll Area */}
         <div className="max-w-full overflow-hidden py-10  relative">
           {/* Gradient Masks for fading edges */}
@@ -143,6 +169,22 @@ export function Clients() {
 
         <div className="text-center mt-10 text-sm text-muted-foreground">
           Want to see your logo here? Let’s collaborate.
+=======
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {clients.map((client) => (
+              <div
+                key={client}
+                className="bg-card/80 clean-border glass-surface rounded-2xl px-4 py-6 text-center text-sm font-semibold text-foreground/80"
+              >
+                {client}
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-10 text-sm text-muted-foreground">
+            Want to see your logo here? Let’s collaborate.
+          </div>
+>>>>>>> 41aa7448b710a6f83e8472e539e659acc74fa569
         </div>
       </div>
     </section>
